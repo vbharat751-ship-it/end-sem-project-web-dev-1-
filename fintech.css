@@ -1,0 +1,153 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #1a2226;
+}
+
+header {
+  background: #183153;
+  padding: 14px 0;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.logo span {
+  color: #0984e3;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar li {
+  margin: 0 12px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar a:hover {
+  color: #0984e3;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+.user-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 22px auto;
+  padding: 0 20px;
+}
+
+.dashboard {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.card {
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(52, 73, 94, 0.12);
+  border-radius: 12px;
+  padding: 22px;
+  flex: 1 1 340px;
+  min-width: 340px;
+}
+.balance p {
+  font-size: 2.1rem;
+  color: #0984e3;
+  font-weight: bold;
+  margin: 14px 0 16px 0;
+}
+.balance button {
+  background: #0984e3;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 9px;
+}
+.balance button:hover {
+  background: #0a5fde;
+}
+.activity ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.activity li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 9px 0;
+}
+.type {
+  padding: 4px 15px;
+  border-radius: 14px;
+  font-size: 0.98em;
+  font-weight: 500;
+}
+.type.deposit {
+  background: #e4fcef;
+  color: #16a085;
+}
+.type.sent {
+  background: #fdecf0;
+  color: #eb2f06;
+}
+.type.payout {
+  background: #eaf6ff;
+  color: #0984e3;
+}
+.details {
+  font-weight: bold;
+}
+.date {
+  font-size: 0.92em;
+  color: #888;
+}
+footer {
+  text-align: center;
+  background: #183153;
+  color: #fff;
+  padding: 10px;
+  margin-top: 28px;
+  font-size: 1em;
+}
+@media (max-width: 800px) {
+  .dashboard {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .card {
+    min-width: unset;
+  }
+}
